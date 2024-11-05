@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="addbutton" extends="Group">
+    <interface>
+        <field id="text" type="string" onChange="onTextchanged" />
+        <field id="buttonSelected" type="boolean" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/button/addbutton.brs" />
+
+    <children>
+        <Rectangle
+        id = "background"
+        color = "#FFFFFF"
+        height = "80"
+        visible = "true">
+            <Label
+                id = "label"
+                horizAlign = "center"
+                vertAlign = "center"
+                height = "80"
+                color = "#FFA07A" >
+            </Label>
+        </Rectangle>
+    </children>
+</component>
