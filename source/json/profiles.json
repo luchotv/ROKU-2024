@@ -1,0 +1,22 @@
+[
+    {
+        "id": "jokerProfile",
+        "name": "Leono",
+        "imagePath": "pkg:/images/lion.jpg"
+    },
+    {
+        "id": "batmanProfile",
+        "name": "Narizon",
+        "imagePath": "pkg:/images/rooster.jpg"
+    },
+    {
+        "id": "optimusProfile",
+        "name": "Lenteja",
+        "imagePath": "pkg:/images/turtle.jpg"
+    },
+    {
+        "id": "robotechProfile",
+        "name": "Amigo",
+        "imagePath": "pkg:/images/dog.jpg"
+    }
+]

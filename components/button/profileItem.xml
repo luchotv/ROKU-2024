@@ -1,0 +1,15 @@
+<component name="profileItem" extends="Group">
+    <interface>
+        <field id="uri" type="string" onChange="uriChanged"/>
+        <field id="name" type="string" onChange="nameChanged"/>
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/button/profileItem.brs"/>
+    <children>
+        <LayoutGroup id="container" layoutDirection="vert" itemSpacings="[100]" vertAlignment="center" horizAlignment="center">
+            <Rectangle id="frame" color="##ECF0F1" width="450" height="450" visible="true">
+                <Poster id="poster" width="400" height="400" translation="[25, 25]"/>
+            </Rectangle>
+            <addButton id="button"/>
+        </LayoutGroup>
+    </children>
+</component>

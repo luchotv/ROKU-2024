@@ -10,16 +10,15 @@
     <children>
         <Rectangle
         id = "background"
-        color = "#FFFFFF"
         height = "80"
-        visible = "true">
+        color="0x5700A9FF">
             <Label
                 id = "label"
                 horizAlign = "center"
                 vertAlign = "center"
                 height = "80"
-                color = "#FFA07A" >
-            </Label>
+                color = "#FFA07A" />
+
         </Rectangle>
     </children>
 </component>

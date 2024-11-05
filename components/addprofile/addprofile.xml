@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="addprofile" extends="Group">
+    <interface>
+        <field id="uri" type="string" onChange="onImagechanged" />
+        <field id="buttonSelected" type="boolean" />
+    </interface>
+
+    <script type="text/brightscript" uri="pkg:/components/addprofile/addprofile.brs" />
+
+    <children>
+        <Rectangle
+        id = "background1"
+        color="0x5700A9FF"
+        width="400"
+        height="400" >
+            <Poster
+                id="poster" 
+                width="320" 
+                height="320"
+                translation = "[40 ,40 ]"/>
+
+        </Rectangle>
+    </children>
+</component>

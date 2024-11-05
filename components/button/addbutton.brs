@@ -2,7 +2,7 @@ sub init()
     m.background = m.top.findNode("background")
     m.label = m.top.findNode("label")
     m.padding = 33
-    m.top.observeField("focusChild", "onFocusChanged")
+    m.top.observeField("focusedChild", "onFocusChanged")
 
 end sub
 

@@ -1,112 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<component name="profileScene" extends="Scene">
-    <script type="text/brightscript" uri="pkg:/components/scenes/profileScene/profileScene.brs" />
-    <children>  
-        <Rectangle 
-            id="rectangle0" 
-            color="#151D60"
-            width="1920" 
-            height="1080" >
-        </Rectangle>
-        <Rectangle
-            id="rectangle_title"
-            color="#60151D"
-            width="400" 
-            height="100" 
-            translation="[760,96]" >
-            <Label
-                id="labeltitle"
-                text="MY PETS"
-                width="400"
-                height="100"
-                font="font:MediumBoldSystemFont"
-                textColor = "#CCCCFF"
-                horizAlign="center" 
-                vertAlign="center" >
-            </Label>
-        </Rectangle>    
-        <LayoutGroup
-            id="Group1"
-            translation="[64,292]">
-            <Rectangle 
-                id="rectangle11" 
-                color="0x5700A9FF"
-                translation= "[0,0]" 
-                width="400"
-                height="400" >
-                <Poster
-                    id="poster11" 
-                    width="320" 
-                    height="320"
-                    translation = "[40 ,40 ]"
-                    uri="pkg:/images/cat.jpg"/>
-            </Rectangle>
-            <addbutton
-                id="rectangle12"
-                text="CAT" />                
+<component name="profileScene" extends="baseScene">
+    <interface>
+        <field id="profileSelected" type="boolean" value="false" alwaysNotify="true"/>
+        <field id="nameSelected" type="string" value=""/>
+    </interface>
+    <script type="text/brightscript" uri="pkg:/components/scenes/profileScene/profileScene.brs"/>
+    <children>
+        <LayoutGroup 
+            id="profileContainer" 
+            layoutDirection="horiz" 
+            itemSpacings="[10]" 
+            vertAlignment="center" 
+            horizAlignment="left" 
+            translation="[50, 500]">
+            <profileItem id="profile1" uri="pkg:/components/images/cat.jpg" name="CAT"/>
+            <profileItem id="profile2" uri="pkg:/components/images/lion.jpg" name="LION"/>
+            <profileItem id="profile3" uri="pkg:/components/images/dog.jpg" name="DOG"/>
+            <profileItem id="profile4" uri="pkg:/components/images/horse.jpg" name="HORSE"/>
         </LayoutGroup>
-        <LayoutGroup
-            id="Group2"
-            translation="[528,292]">
-            <Rectangle 
-                id="rectangle21" 
-                color="#EBEE09"
-                translation= "[0,0]" 
-                width="400" 
-                height="400" >
-                <Poster
-                    id="poster21" 
-                    width="320" 
-                    height="320"
-                    translation = "[40 ,40 ]"
-                    uri="pkg:/images/dog.jpg"/>
-            </Rectangle>
-            <addbutton
-                id="rectangle22"
-                text="DOG" />
-        </LayoutGroup>
-        <LayoutGroup
-            id="Group3"
-            translation="[992,292]">
-            <Rectangle 
-                id="rectangle31" 
-                color="#0F2EED"
-                translation= "[0,0]" 
-                width="400" 
-                height="400" >
-                <Poster
-                    id="poster31" 
-                    width="320" 
-                    height="320"
-                    translation = "[40 ,40 ]"
-                    uri="pkg:/images/rooster.jpg"/>
-            </Rectangle>
-            <addbutton
-                id="rectangle32"
-                text="ROOSTER" />
-        </LayoutGroup>
-        <LayoutGroup
-            id="Group4"
-            translation="[1456,292]">
-            <Rectangle 
-                id="rectangle41" 
-                color="#FA2002"
-                translation= "[0,0]" 
-                width="400" 
-                height="400" >
-                <Poster
-                    id="poster41" 
-                    width="320" 
-                    height="320"
-                    translation = "[40 ,40 ]"
-                    uri="pkg:/images/elephant.jpg"/>
-            </Rectangle>
-            <addbutton
-                id="rectangle42"
-                text="ELEPHANT" />
-
-        </LayoutGroup>
-
     </children>
 </component>
+
+

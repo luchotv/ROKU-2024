@@ -1,0 +1,7 @@
+<component name="homeScene" extends="baseScene">
+    <script type="text/brightscript" uri="pkg:/components/scenes/homeScene.brs"/>
+    <children>
+        <Rectangle id="background" color="0x5700A9FF" width="1920" height="1080"/>
+        <Label id="welcomeLabel" width="1920" height="1080" horizAlign="center" vertAlign="center"/>
+    </children>
+</component>
